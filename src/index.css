@@ -1,0 +1,97 @@
+/* General styles */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 70rem;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  color: #00e6e6;
+  text-shadow: 0px 0px 10px #00e6e6;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2rem;
+  color: #e0e0e0;
+}
+
+.measurement-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.measurement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.speed-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ff99;
+  text-shadow: 0px 0px 8px #00ff99;
+}
+
+.test-time {
+  font-size: 1rem;
+  margin-top: 3rem;
+  color: #00e6e6;
+  text-shadow: 0px 0px 6px #00e6e6;
+}
+
+/* Button styles */
+button {
+  margin-bottom: 3rem;
+  background: #00e6e6;
+  border: none;
+  width: 50%;
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: #0f2027;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.4);
+}
+
+button:hover {
+  background: #00ff99;
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.6);
+}
+
+button:disabled {
+  background: #888;
+  cursor: not-allowed;
+  box-shadow: none;
+}
